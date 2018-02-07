@@ -2,7 +2,7 @@ const path = require('path');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-  const blogPostTemplate = path.resolve('src/templates/blogTemplates.js');
+  const blogPostTemplate = path.resolve('src/templates/blogTemplate.js');
 
    return graphql(`
     {
