@@ -1,10 +1,11 @@
-const path = require('path');
+const path = require("path");
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-  const blogPostTemplate = path.resolve('src/templates/blogTemplate.js');
 
-   return graphql(`
+  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`);
+
+  return graphql(`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
