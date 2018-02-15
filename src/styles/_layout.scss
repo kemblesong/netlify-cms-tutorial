@@ -1,0 +1,15 @@
+@mixin contain($width: 1140px, $padding: true) {
+  margin-left: auto;
+  margin-right: auto;
+
+  @if ($padding) {
+    max-width: calc(#{$width} + (#{$base-spacing-unit}*2));
+    padding: 0 $base-spacing-unit;
+  } @else {
+    max-width: calc($width);
+  }
+}
+
+.container {
+  @include contain(800px);
+}

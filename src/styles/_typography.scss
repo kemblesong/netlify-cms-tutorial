@@ -1,0 +1,145 @@
+.h1 {
+  color: getColor('white');
+  font-family: $heading-font-family;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+}
+
+.h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.75;
+  color: $loud-color;
+}
+
+.h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.h6 {
+  font-family: $heading-font-family;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.75;
+  text-transform: uppercase;
+}
+
+.link {
+  color: $action-color;
+  font-weight: 700;
+
+  &:hover {
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+.fixed {
+  font-family: $fixed-font-family;
+  font-size: $fixed-font-size;
+  line-height: $fixed-line-height;
+}
+
+.quiet { color: $quiet-color; }
+.loud { color: $loud-color; }
+.italic { font-style: italic; }
+.bold { font-weight: 700; }
+
+.unordered-list {
+  list-style-type: disc;
+
+  li {
+    display: list-item;
+  }
+}
+
+.ordered-list {
+  list-style: decimal;
+
+  li {
+    display: list-item;
+  }
+}
+
+.text--gradient {
+  display: inline-block;
+  background: -webkit-linear-gradient(left, getColour('blue'), getColour('blue', 'teal'));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wysiwyg {
+  i, em {
+    @extend .italic;
+  }
+
+  b, strong {
+    @extend .bold;
+  }
+
+  h1, .h1 {
+    @extend .h1;
+    margin: 1em 0 0.5em;
+  }
+
+  h2, .h2 {
+    @extend .h2;
+    margin: 1em 0 0.5em;
+  }
+
+  h3, .h3 {
+    @extend .h3;
+    margin: 1em 0 0.5em;
+  }
+
+  h4, .h4 {
+    @extend .h4;
+    margin: 1em 0 0.5em;
+  }
+
+  h5, .h5 {
+    @extend .h5;
+    margin: 1em 0 0.5em;
+  }
+
+  h6, .h6 {
+    @extend .h6;
+    margin: 1em 0 .5em;
+  }
+
+  ul {
+    @extend .unordered-list;
+  }
+
+  ol {
+    @extend .ordered-list;
+  }
+
+  p, ol, ul {
+    margin: 1rem 0;
+
+    > a {
+      @extend .link;
+    }
+  }
+
+  pre, code {
+    @extend .fixed;
+  }
+}

@@ -1,0 +1,21 @@
+@import 'node_modules/slab.css/tools';
+@import '../../styles/variables';
+@import 'node_modules/slab.css/index';
+
+.root {
+  @include media-query(desk) {
+    float: right;
+  }
+}
+
+.list {
+  margin: 0;
+  list-style: none;
+}
+
+.item {
+  @include media-query(desk) {
+    display: inline-block;
+    margin-left: $base-spacing-unit/2;
+  }
+}

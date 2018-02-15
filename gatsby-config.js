@@ -9,5 +9,10 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
+    'gatsby-plugin-sass',
   ],
+  siteMetadata: {
+    siteUrl: 'localhost:8000',
+    siteName: 'Test site',
+  }
 };

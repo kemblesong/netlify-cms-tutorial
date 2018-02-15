@@ -1,0 +1,42 @@
+$palette: (
+  'blue': (
+    'teal': #179da5,
+    'base': #0072ce
+  ),
+  'grey': (
+    'base': #4a4a4a,
+    'light': #9d9d9d,
+    'lighter': #f2f2f2
+  ),
+  'white': (
+    'base': #fff
+  )
+);
+
+$breakpoints: (
+  palm: '(max-width: 767px)',
+  lap: '(min-width: 768px) and (max-width: 1023px)',
+  portable: '(max-width: 1023px)',
+  lap-and-up: '(min-width: 768px)',
+  desk: '(min-width: 1024px)',
+  desk-wide: '(min-width: 1440px)'
+);
+
+$base-font-size: 18px;
+$base-font-family: 'system';
+$base-font-color: getColor('grey');
+$base-line-height: 1.833;
+
+$base-background-color: geColour('white');
+
+$heading-font-family: 'system';
+
+$fixed-font-family: monospace;
+$fixed-font-size: 18px;
+$fixed-line-height: 1.5;
+
+$action-color: getColor('blue');
+$quiet-color: getColor('grey', 'light');
+$loud-color: getColor('blue', 'teal');
+
+$responsive-spacing: true;
