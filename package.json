@@ -9,11 +9,14 @@
   },
   "dependencies": {
     "gatsby": "^1.9.158",
+    "gatsby-image": "^1.0.37",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-netlify-cms": "^1.0.5",
     "gatsby-plugin-sass": "^1.0.17",
+    "gatsby-plugin-sharp": "^1.6.28",
     "gatsby-source-filesystem": "^1.5.18",
     "gatsby-transformer-remark": "^1.7.30",
+    "gatsby-transformer-sharp": "^1.6.19",
     "slab.css": "^1.0.2"
   }
 }
